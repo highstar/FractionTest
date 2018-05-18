@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		AE917BDC20AE7C28007BA7B1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AE917BDB20AE7C28007BA7B1 /* main.m */; };
 		AE917BE420AE85D4007BA7B1 /* Fraction.m in Sources */ = {isa = PBXBuildFile; fileRef = AE917BE320AE85D4007BA7B1 /* Fraction.m */; };
+		AE917BE720AF1CE8007BA7B1 /* Complex.m in Sources */ = {isa = PBXBuildFile; fileRef = AE917BE620AF1CE8007BA7B1 /* Complex.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,6 +29,8 @@
 		AE917BDB20AE7C28007BA7B1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		AE917BE220AE845E007BA7B1 /* Fraction.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Fraction.h; sourceTree = "<group>"; };
 		AE917BE320AE85D4007BA7B1 /* Fraction.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Fraction.m; sourceTree = "<group>"; };
+		AE917BE520AF1C0D007BA7B1 /* Complex.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Complex.h; sourceTree = "<group>"; };
+		AE917BE620AF1CE8007BA7B1 /* Complex.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Complex.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +64,8 @@
 			isa = PBXGroup;
 			children = (
 				AE917BDB20AE7C28007BA7B1 /* main.m */,
+				AE917BE520AF1C0D007BA7B1 /* Complex.h */,
+				AE917BE620AF1CE8007BA7B1 /* Complex.m */,
 				AE917BE220AE845E007BA7B1 /* Fraction.h */,
 				AE917BE320AE85D4007BA7B1 /* Fraction.m */,
 			);
@@ -124,6 +129,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AE917BDC20AE7C28007BA7B1 /* main.m in Sources */,
+				AE917BE720AF1CE8007BA7B1 /* Complex.m in Sources */,
 				AE917BE420AE85D4007BA7B1 /* Fraction.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
