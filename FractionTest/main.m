@@ -10,16 +10,13 @@
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-        Fraction *myFraction = [[Fraction alloc] init];
+        Fraction *aFraction = [[Fraction alloc] init];
         
-        // set fraction to 1/3 using the dot operator
+        [aFraction setTo:100 over:200];
+        [aFraction print];
         
-        myFraction.numerator = 1;
-        myFraction.denominator = 3;
-        
-        // display the fraction
-        
-        NSLog(@"The value of myFaction is %i, and the denominator is %i", myFraction.numerator, myFraction.denominator);
+        [aFraction setTo:1 over:3];
+        [aFraction print];
     }
     
     return 0;

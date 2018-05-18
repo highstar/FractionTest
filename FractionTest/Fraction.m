@@ -23,4 +23,19 @@
         return NAN;
 }
 
+- (void) setTo: (int) n over: (int) d {
+    numerator = n;
+    denominator = d;
+}
+
+// add a Fraction to the receiver
+
+- (void) add: (Fraction *) f {
+    // To add two fractions:
+    // a/b + c/d = ((a * d) + (b * c) / (b * d)
+    
+    numerator = numerator * f.denominator + denominator * f.numerator;
+    denominator = denominator * f.denominator;
+}
+
 @end
