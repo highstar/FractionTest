@@ -11,22 +11,15 @@
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-        id dataValue;
-        Fraction *f1 = [[Fraction alloc] init];
-        Complex *c1 = [[Complex alloc] init];
+        Fraction *a, *b, *c;
         
-        [f1 setTo:2 over: 5];
-        [c1 setReal: 10.0 andImaginary: 2.5];
+        NSLog(@"Fractions allocated: %i", [Fraction count]);
         
-        // first dataValue gets a fraction
+        a = [[Fraction allocF] init];
+        b = [[Fraction allocF] init];
+        c = [[Fraction allocF] init];
         
-        dataValue = f1;
-        [dataValue print];
-        
-        // now dataValue gets a complex number
-        
-        dataValue = c1;
-        [dataValue print];
+        NSLog(@"Fractions allocated: %i", [Fraction count]);
     }
     
     return 0;

@@ -19,5 +19,8 @@
 - (double) convertToNum;
 - (Fraction *) add: (Fraction *) f;
 - (void) reduce;
+- (instancetype) initWith: (int) n over: (int) d;
++ (Fraction *) allocF;
++ (int) count;
 
 @end
