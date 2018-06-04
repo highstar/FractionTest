@@ -88,4 +88,15 @@ static int gCounter;
     return [self initWith: 0 over: 0];
 }
 
+- (NSString *) description {
+    return [NSString stringWithFormat: @"%i/%i", numerator, denominator];
+}
+
+- (id) copyWithZone:(NSZone *)zone {
+    Fraction *newFract = [[Fraction allocWithZone:zone] init];
+    
+    [newFract setTo:numerator over:denominator];
+    return newFract;
+}
+
 @end

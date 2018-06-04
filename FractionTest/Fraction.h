@@ -10,7 +10,7 @@
 
 // The Fraction class
 
-@interface Fraction : NSObject
+@interface Fraction : NSObject <NSCopying>
 
 @property int numerator, denominator;
 
@@ -22,5 +22,5 @@
 - (instancetype) initWith: (int) n over: (int) d;
 + (Fraction *) allocF;
 + (int) count;
-
+- (NSString *) description;
 @end
